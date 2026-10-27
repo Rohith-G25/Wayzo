@@ -1,0 +1,86 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+
+# Node & Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Uploads and temporary artifacts
+backend/uploads/images/*
+!backend/uploads/images/.gitkeep
+backend/uploads/videos/*
+!backend/uploads/videos/.gitkeep
+backend/uploads/processed/*
+!backend/uploads/processed/.gitkeep
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Unused or backup AI model weights
+
+backend/yolov8n.pt
+backend/ml/weights/best_coco_backup.pt
+backend/ml/weights/rdd2022_yolov8s.pt
+
+# Local datasets (keep out of Git unless explicitly required)
+
+datasets/
+
+# Runtime uploads and generated media
+backend/uploads/*
+!backend/uploads/.gitkeep
+!backend/uploads/images/
+!backend/uploads/videos/
+!backend/uploads/processed/
+backend/uploads/images/*
+backend/uploads/videos/*
+backend/uploads/processed/*
+
+# Local datasets and agent-specific files
+datasets/
+.agents/
